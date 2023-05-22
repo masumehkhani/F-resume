@@ -1,9 +1,27 @@
- * {
+@font-face {
+    font-family: 'vazirmatn';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-Regular.woff2');
+ }
+ @font-face {
+    font-family: 'vazirmatn-bold';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-Bold.woff2');
+ }
+ @font-face {
+    font-family: 'Vazirmatn-SemiBold';
+    src: url('./fonts/fonts-vazirmatn/Vazirmatn-SemiBold.woff2');
+ }
+ @font-face {
+    font-family: 'shabnam';
+    src: url('./fonts/fonts-shabnam/Shabnam.woff2');
+ }
+
+* {
      margin: 0;
      padding: 0;
      box-sizing: 0;
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-family: 'vazirmatn';
  }
+
 
  body {
      background-color: lightblue;
@@ -21,7 +39,7 @@
      background-color: #fff;
      margin: 50px;
      display: grid;
-     grid-template-columns: 1fr 2fr;
+     grid-template-columns: 1.1fr 2fr;
      box-shadow: 0cqh 10px 15px rgba(0, 0, 0, 0.1);
  }
 
@@ -67,15 +85,18 @@
      text-align: center;
      font-weight: 600;
      line-height: 1.4rem;
+     font-family: 'Vazirmatn-SemiBold';
 
  }
 
  .profileText h2 span {
+    display: block;
      font-size: 0.8rem;
+     margin-top: 1rem;
  }
 
  .contactInfo {
-     padding-top: 40px;
+     padding-top: 60px;
  }
 
  .title {
@@ -84,6 +105,7 @@
      font-weight: 600;
      letter-spacing: 1px;
      margin-bottom: 20px;
+     font-family: 'Vazirmatn-SemiBold';
  }
 
  .contactInfo ul {
@@ -95,12 +117,19 @@
      list-style: none;
      margin: 10px 0;
  }
+ .contactInfo ul li a{
+    text-decoration: none;
+ }
 
  .contactInfo ul li .icon {
      display: inline-block;
      width: 30px;
      font-size: 18px;
      color: #03a9f4;
+ }
+ .contactInfo ul li .text:nth-child(1)  {
+    font-family: 'shabnam';
+    direction: rtl;
  }
 
  .contactInfo ul li span {
@@ -119,11 +148,17 @@
  .contactInfo.education h4:nth-child(2) {
      color: #fff;
      font-weight: 500;
+     margin: 0.5rem 0;
  }
 
  .contactInfo.education h4 {
      color: #fff;
-     font-weight: 300;
+     font-weight: 200;
+     font-family: 'vazirmatn';
+     font-size: 0.8rem;
+ }
+ .contactInfo.education h5 {
+    font-family: 'shabnam';
  }
 
  .contactInfo.language .percent {
@@ -163,10 +198,12 @@
      text-transform: uppercase;
      letter-spacing: 1px;
      margin-bottom: 10px;
+     font-family: 'vazirmatn';
  }
 
  p {
      color: #333;
+     font-family: 'vazirmatn';
  }
 
  .about .box {
@@ -187,14 +224,16 @@
  .about .box .text h4 {
      text-transform: uppercase;
      color: #2a7da2;
+     
      font-weight: 600;
      font-size: 16px;
  }
 
  .skills .box h4 {
      /* text-transform: uppercase; */
-     color: #848c99;
+     color: #515357;
      font-weight: 500;
+     font-family: 'Vazirmatn-SemiBold';
  }
 
  .skills .box li {
